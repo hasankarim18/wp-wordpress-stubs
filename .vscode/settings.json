@@ -1,7 +1,9 @@
 {
   "intelephense.environment.includePaths": [
-    "${workspaceFolder}/vendor/php-stubs/wordpress-stubs",
-    "${workspaceFolder}/vendor/arifpavel/elementor-stubs"
+    "${workspaceFolder}/vendor/php-stubs",
+    "${workspaceFolder}/vendor/arifpavel",
+    "${workspaceFolder}/custom-stubs.php",
+    "./"
   ],
   "intelephense.stubs": [
     "apache",
@@ -25,15 +27,27 @@
     "xml",
     "wordpress"
   ],
-  "intelephense.diagnostics.enable": true,
+  "editor.codeLens": false,
+  "search.searchOnType": false,
+  "breadcrumbs.enabled": false,
+  "editor.minimap.enabled": false,
   "intelephense.files.associations": ["**/*.php"],
+  "intelephense.diagnostics.enable": true,
+  "intelephense.inlayHints.parameterNames.enabled": true,
+  "intelephense.inlayHints.variableTypes.enabled": true,
+  "intelephense.inlayHints.propertyDeclarationTypes.enabled": true,
+  "intelephense.inlayHints.functionReturnTypes.enabled": true,
+  "editor.inlayHints.enabled": "on",
   "intelephense.telemetry.enabled": false,
   "files.exclude": {
+    "**/vendor/**/.git": true,
     "**/node_modules": true,
-    "**/vendor/**/.git": true
+    "**/package-lock.json": true
   },
   "search.exclude": {
     "**/node_modules": true,
     "**/vendor": true
-  }
+  },
+  "editor.fontSize": 14,
+  "window.zoomLevel": 0.5
 }
